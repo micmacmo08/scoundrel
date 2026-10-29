@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import heroImg from './assets/hero.png'
 
 function App() {
@@ -23,7 +22,36 @@ function App() {
 						<dt>Depth</dt>
 						<dd>Room 1</dd>
 					</dl>
-					<button type="button" className="btn-primary">Enter the dungeon</button>
+				</section>
+				<button type="button" className="btn-primary">Enter the dungeon</button>
+				<section aria-label="Room">
+					<h2>Room</h2>
+					<div className="room">
+						<div id="card1" className="card">
+							<p>Ace</p>
+							<p>of</p>
+							<p>Spades</p>
+							<p>Type: Monster</p>
+						</div>
+						<div id="card2" className="card">
+							<p>Ace</p>
+							<p>of</p>
+							<p>Hearts</p>
+							<p>Type: Potion</p>
+						</div>
+						<div id="card3" className="card">
+							<p>Ace</p>
+							<p>of</p>
+							<p>Diamonds</p>
+							<p>Type: Weapon</p>
+						</div>
+						<div id="card4" className="card">
+							<p>Ace</p>
+							<p>of</p>
+							<p>Clubs</p>
+							<p>Type: Monster</p>
+						</div>
+					</div>
 				</section>
 			</main>
 			<footer>

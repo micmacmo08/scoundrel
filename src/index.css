@@ -27,10 +27,6 @@ h2 {
 	font-size: 20px;
 }
 
-p {
-	padding: var(--space-1);
-}
-
 button {
 	padding: var(--space-2) var(--space-3);
 }
@@ -53,6 +49,7 @@ button {
 
 .hero-portrait {
 	width: 100%;
+	max-width: 200px;
 	height: auto;
 	display: block;
 	margin: auto;
@@ -61,4 +58,26 @@ button {
 .btn-primary {
 	background: var(--accent);
 	color: var(--bg);
+}
+
+.room {
+	display: grid;
+	gap: var(--space-1);
+	grid-template-columns: repeat(2, 1fr);
+	padding: var(--space-1);
+}
+
+.card {
+	aspect-ratio: 5/7;
+	width: 100%;
+	color: var(--surface);
+	background-color: var(--ink);
+	border: solid var(--bg);
+	border-radius: var(--space-2);
+}
+
+@media (min-width: 640px) {
+	.room {
+		grid-template-columns: repeat(4, 1fr);
+	}
 }
